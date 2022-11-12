@@ -1,21 +1,21 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    newList: [],
-    loading: false,
-    error: false,
-}
+  newsList: [],
+  loading: false,
+  error: false,
+};
 
 const newsSlice = createSlice({
-  name: 'news',
+  name: "news",
   initialState,
   reducers: {
-    clearNewLsit: () => {
+    clearNewList: (state) => {
       state.newsList = [];
-    }
-  }
+    },
+  },
 });
 
-export const {} = newsSlice.actions
+export const { clearNewList } = newsSlice.actions;
 
-export default newsSlice.reducer
+export default newsSlice.reducer;
