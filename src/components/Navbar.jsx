@@ -8,9 +8,11 @@ import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const navigate = useNavigate();
-  const user = true;
+  const user = false;
 
-  const handleLogout = () => {};
+  const handleLogout = () => {
+    // TODO
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="secondary">
